@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>3</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logotip">Лого</div>
+        <div class="header-link">
+            <a href="" class="link-first">Контент</a>
+            <a href="#" class="link-second">Сайт</a>
+        </div>
+    </div>
+    <h1>Каталог лабораторной №3</h1>
+    <div class="main">
+        <div class="main-catalog" id="catalog">
+            <div class="item">
+                <img src="./img/1.png">
+                <div class="title">ДЗУППА ДИ ПОЛО</div>
+                <div class="sell">
+                    <div class="cost">500</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/2.png">
+                <div class="title">БУРРАТА</div>
+                <div class="sell">
+                    <div class="cost">400</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/3.png">
+                <div class="title">ТОРТЕЛЛИНИ ПАННА Э ПРОШУТТО</div>
+                <div class="sell">
+                    <div class="cost">220</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/4.png">
+                <div class="title">ЛАЗАНЬЯ АЛЛА БОЛОНЬЕЗЕ</div>
+                <div class="sell">
+                    <div class="cost">380</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/5.png">
+                <div class="title">ЧЕСТИНО ДИ ФРАГОЛЕ</div>
+                <div class="sell">
+                    <div class="cost">350</div><div class="rub">₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/6.png">
+                <div class="title">ПАНКЕЙК КОН КРЕМА ШАНТИЛЬИ Э ПЕСКЕ ШИРОПАТЕ</div>
+                <div class="sell">
+                    <div class="cost">180</div><div class="rub">₽</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="main-catalog-btn">ПОДСВЕТКА НАЗВАНИЙ БЛЮД</button>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelector('.main-catalog-btn');
+        let item = document.querySelectorAll(".item");
+        let yakor = document.querySelector(".link-first")
+
+        yakor.href = "#catalog";
+
+        button.onclick = function(){
+           for(let i = 0; i<item.length; i++){
+            if(i % 2 != 0){
+                item[i].classList.toggle("bg-item");
+            }
+        }  
+        }
+       
+    </script>    
+</body>
+</html>

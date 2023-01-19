@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+  margin: 12px;
+}
+
+.logotip{
+    height: 40px;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.header-link{
+    margin-top: 10px;
+}
+
+.header-link a{
+  font-weight: 500;
+}
+
+.link-second{
+    margin-left: 20px;
+}
+
+.main-catalog{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    width: 100%;
+}
+
+.item:hover{
+  opacity: .4;
+}
+
+.item img{
+    width: 100%;
+}
+
+.sell{
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+}
+
+.cost{
+    width: fit-content;
+}
+
+.rub{
+    width: fit-content;
+}
+
+.bg-item{
+    background-color: rgb(23, 187, 64);
+}
+
+.main-catalog-btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: rgb(23, 187, 64);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: -6px 0px 0px #0e5f30;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .main-catalog-btn,
+  .main-catalog-btn:after {
+    width: 400px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body{
+    margin: 40px;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logotip{
+    width: 300px;
+  }
+
+  .main-catalog{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+
+  .item{
+    width: 32%;
+  }
+
+  .btn{
+    text-align: center;
+  }
+
+}
